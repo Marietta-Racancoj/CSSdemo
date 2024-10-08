@@ -1,7 +1,7 @@
-/*Sytle sheet for homework 1 - personal webpage*/
+/*Sytle sheet - personal webpage*/
 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 /*style for index.html-----------------------------------------------*/
 .flex-container-h{
@@ -65,18 +65,16 @@ section{
     position: relative;
     background-color: rgb(73, 64, 60);
  }
-
 .contacth1{
     background-color: dimgrey;
     padding: 10pt;
     color: antiquewhite;
 }
-
-form label, form input, form button {
+/*form label, form input, form button {
     display: block;         
     margin-bottom: 10px;    
     width: 100%;            
-}
+}*/
 
 
 /*style for courses.html--------------------------------------------------*/
@@ -99,21 +97,22 @@ form label, form input, form button {
 /*style for header, footer, and body--------------------------------------------------*/
 
 .top-image {
-    width: 100%;      
+    width: 100%; /*takes full length of page*/
     height: auto;     
     display: block;   
-    z-index: 0;       
+    z-index: 0; /*Temp position. Working on getting page 
+    to slide over top image. Problems with navbar position.*/       
 }
 footer{
     background-color: darkgrey;
     padding: 20pt;
     text-align: left;
-    display: block;
-    clear: both;
+    display: block; /*allows block display after flex box*/
+    clear: both; /*clears flex box settings for borders and such*/
 }
 body{
     background-color: rgb(246, 246, 232);
-    margin: 0;
+    margin: 0; /*Makes sure there is no margin around page*/
 }
 
 /*style for NavBar--------------------------------------------------*/
@@ -121,11 +120,10 @@ body{
     background: gray;
     font-family: cambria;
     padding: 10px;         
-    text-decoration: none;
-    position: relative;     /* Position relative makes sure this follows the doc flow */
+    text-decoration: none; /*no underline*/
+    position: relative; /*Makes sure follows the doc flow */
     margin-top: 0;          
 }
-
 /* Navbar content styling */
 .navdiv {
     display: flex;                
@@ -139,24 +137,20 @@ body{
     color: white;
     text-decoration: none;
 }
-
 /* List items (Navbar links) */
 ul {
-    list-style: none;  
+    list-style: none; /*allows horizontal*/
     display: flex;   
 }
-
 li {
     margin-right: 25px;   
 }
-
 li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none;   /* Remove underline */
+    text-decoration: none; /* Remove underline */
 }
-
 /* Hover effects */
 .logo a:hover, li a:hover {
     color: burlywood;
